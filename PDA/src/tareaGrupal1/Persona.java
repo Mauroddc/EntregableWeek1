@@ -38,6 +38,6 @@ public class Persona {
 	}
 	@Override
 	public String toString() {
-		return "Persona [cedula=" + cedula + ", nombre=" + nombre + ", status=" + status + "]";
+		return nombre + ", "+cedula+ ", Status: "+status;
 	};
 }

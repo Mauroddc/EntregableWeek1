@@ -5,7 +5,8 @@ public class Casino {
 	private static Casino instancia = new Casino();
 	private String nombreCasino; 
 	private Persona responsableCasino;
-	
+	private Juego juegos;
+		
 	public Casino() {
 	}
 	
@@ -34,9 +35,21 @@ public class Casino {
 	public static Casino getInstancia() {
 		return instancia;
 	}
+	
+	public Juego getJuegos() {
+		return juegos;
+	}
+
+	public void setJuegos(Juego juegos) {
+		this.juegos = juegos;
+	}
 
 	@Override
 	public String toString() {
-		return "Casino: " + nombreCasino + ", responsable: " + responsableCasino;
+		return "Casino: " + nombreCasino + ", responsable: " + responsableCasino +"\n" + "Juegos del casino: " 
+				+ juegos;
 	}
+
+
+		
 }

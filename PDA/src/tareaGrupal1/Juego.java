@@ -18,9 +18,7 @@ public class Juego {
 
 	@Override
 	public String toString() {
-		return "Juego [nombreJuego=" + nombreJuego + "]";
-	}
-	
-	
+		return nombreJuego;
+	}	
 
 }

@@ -1,16 +1,14 @@
 package tareaGrupal1;
 
 public class Mesa extends Juego {
-
+	
 	public Mesa(String nombreJuego) {
 		super(nombreJuego);
-		// TODO Auto-generated constructor stub
-	}
+}
 	private double metrosCuadrados;
 	private int cantidadMax;
 	private int cantidadMin;
 	
-
 	public Mesa(String nombreJuego, double metrosCuadrados, int cantidadMax, int cantidadMin) {
 		super(nombreJuego);
 		this.metrosCuadrados = metrosCuadrados;
@@ -35,10 +33,13 @@ public class Mesa extends Juego {
 	public void setCantidadMin(int cantidadMin) {
 		this.cantidadMin = cantidadMin;
 	}
+	
 	@Override
 	public String toString() {
-		return "Mesa [metrosCuadrados=" + metrosCuadrados + ", cantidadMax=" + cantidadMax + ", cantidadMin="
+		return getNombreJuego() + ": Mesa [metrosCuadrados=" + metrosCuadrados + ", cantidadMax=" + cantidadMax + ", cantidadMin="
 				+ cantidadMin + "]";
 	}
 	
+	
+
 }
