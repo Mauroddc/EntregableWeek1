@@ -20,5 +20,4 @@ public class Juego {
 	public String toString() {
 		return nombreJuego;
 	}	
-
 }
